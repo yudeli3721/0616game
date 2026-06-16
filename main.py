@@ -1,9 +1,13 @@
 import sys
-import asyncio
 import random
 import discord
 import os
 from discord.ext import commands
+
+'''
+基本必備
+'''
+import asyncio
 from fastapi import FastAPI
 import uvicorn
 
@@ -149,6 +153,9 @@ async def force_stop(ctx):
     await ctx.send("⏹️ 遊戲資料庫已清空重置。")
 
 # ─── 3. 用同一個事件循環啟動 ───
+'''
+基本必備
+'''
 async def main():
     TOKEN = os.getenv("DISCORD_TOKEN")
     if not TOKEN:
